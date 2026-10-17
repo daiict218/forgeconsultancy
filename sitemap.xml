@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://forgeconsultancy.in/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <video:video>
+      <video:thumbnail_loc>https://forgeconsultancy.in/assets/video/poster.jpg</video:thumbnail_loc>
+      <video:title>Your company's private AI chief of staff — Forge Consultancy</video:title>
+      <video:description>A 2-minute overview of private AI operations that run on your own laptops: inbox triage, drafted replies, deadline tracking and weekly follow-ups.</video:description>
+      <video:content_loc>https://forgeconsultancy.in/assets/video/forge-private-ai-operations.mp4</video:content_loc>
+      <video:duration>110</video:duration>
+    </video:video>
+  </url>
+  <url><loc>https://forgeconsultancy.in/llms.txt</loc><lastmod>2026-10-17</lastmod></url>
+</urlset>
