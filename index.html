@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forge Consultancy — Software engineering, product and QA</title>
+<meta name="description" content="Forge Consultancy is a software engineering practice in Haryana, India. We build backends, ship product, and test what we build — for teams that need engineering capacity they can trust.">
+<meta property="og:title" content="Forge Consultancy">
+<meta property="og:description" content="Software engineering, product management and quality assurance. Bahadurgarh, Haryana, India.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230c1116'/><path d='M28 72V28h44M28 50h30' stroke='%23e8703a' stroke-width='9' fill='none' stroke-linecap='square'/></svg>">
+<style>
+  :root{
+    --ink:#0c1116;
+    --ink-2:#141b23;
+    --line:#202a35;
+    --fg:#e9edf2;
+    --fg-dim:#98a6b5;
+    --ember:#e8703a;
+    --ember-soft:#f0a17c;
+    --max:1080px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--ink); color:var(--fg);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    font-size:17px; line-height:1.65; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 28px}
+  a{color:var(--ember-soft); text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  /* header */
+  header{border-bottom:1px solid var(--line); position:sticky; top:0; background:rgba(12,17,22,.88); backdrop-filter:blur(10px); z-index:10}
+  .bar{display:flex; align-items:center; justify-content:space-between; padding:18px 0; gap:20px}
+  .logo{display:flex; align-items:center; gap:11px; font-weight:650; letter-spacing:-.01em; font-size:17px; color:var(--fg)}
+  .logo:hover{text-decoration:none}
+  .mark{width:26px;height:26px;flex:none}
+  nav a{color:var(--fg-dim); font-size:15px; margin-left:26px}
+  nav a:hover{color:var(--fg); text-decoration:none}
+  @media(max-width:640px){ nav{display:none} }
+
+  /* hero */
+  .hero{padding:96px 0 80px; border-bottom:1px solid var(--line)}
+  .eyebrow{color:var(--ember); font-size:13px; letter-spacing:.14em; text-transform:uppercase; font-weight:600; margin:0 0 22px}
+  h1{
+    font-size:clamp(2.1rem, 5.2vw, 3.5rem); line-height:1.12; letter-spacing:-.028em;
+    font-weight:680; margin:0 0 24px; max-width:16ch;
+  }
+  h1 em{font-style:normal; color:var(--ember)}
+  .lede{font-size:clamp(1.05rem,2.1vw,1.24rem); color:var(--fg-dim); max-width:60ch; margin:0 0 34px}
+  .cta{display:inline-flex; align-items:center; gap:9px; background:var(--ember); color:#12181e;
+       font-weight:640; font-size:16px; padding:13px 24px; border-radius:7px}
+  .cta:hover{background:var(--ember-soft); text-decoration:none}
+
+  /* sections */
+  section{padding:80px 0; border-bottom:1px solid var(--line)}
+  h2{font-size:clamp(1.5rem,3vw,2rem); letter-spacing:-.02em; font-weight:660; margin:0 0 14px}
+  .sec-lede{color:var(--fg-dim); max-width:62ch; margin:0 0 44px}
+
+  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(258px,1fr)); gap:20px}
+  .card{background:var(--ink-2); border:1px solid var(--line); border-radius:11px; padding:28px 26px}
+  .card h3{font-size:1.06rem; margin:0 0 11px; font-weight:640; letter-spacing:-.01em}
+  .card p{margin:0; color:var(--fg-dim); font-size:15.5px; line-height:1.62}
+  .card .ico{color:var(--ember); font-size:20px; line-height:1; margin-bottom:15px; display:block}
+
+  ol.steps{counter-reset:s; list-style:none; padding:0; margin:0; display:grid; gap:22px}
+  ol.steps li{counter-increment:s; padding-left:52px; position:relative}
+  ol.steps li::before{
+    content:counter(s,decimal-leading-zero); position:absolute; left:0; top:1px;
+    color:var(--ember); font-variant-numeric:tabular-nums; font-weight:660; font-size:14px;
+    border:1px solid var(--line); border-radius:6px; width:34px; height:30px;
+    display:flex; align-items:center; justify-content:center; background:var(--ink-2);
+  }
+  ol.steps strong{display:block; font-weight:620; margin-bottom:3px}
+  ol.steps span{color:var(--fg-dim); font-size:15.5px}
+
+  dl.facts{display:grid; grid-template-columns:auto 1fr; gap:12px 26px; margin:26px 0 0; font-size:15.5px}
+  dl.facts dt{color:var(--fg-dim); white-space:nowrap}
+  dl.facts dd{margin:0; font-variant-numeric:tabular-nums}
+
+  .contact-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:22px; margin-top:30px}
+  .contact-grid .label{color:var(--fg-dim); font-size:13px; letter-spacing:.1em; text-transform:uppercase; margin-bottom:6px}
+  .contact-grid .val{font-size:16.5px; word-break:break-word}
+
+  footer{padding:38px 0 46px; color:var(--fg-dim); font-size:14px;
+         display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top">
+      <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
+        <rect width="100" height="100" rx="20" fill="#141b23"/>
+        <path d="M28 72V28h44M28 50h30" stroke="#e8703a" stroke-width="9" fill="none" stroke-linecap="square"/>
+      </svg>
+      Forge Consultancy
+    </a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <div class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Bahadurgarh, Haryana · India</p>
+      <h1>Engineering capacity you can <em>actually rely on</em>.</h1>
+      <p class="lede">
+        Forge Consultancy is a software practice working with product teams abroad.
+        We write the backend, shape the product, and test what we ship — as one
+        small team rather than three disconnected vendors.
+      </p>
+      <a class="cta" href="#contact">Start a conversation →</a>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>What we do</h2>
+      <p class="sec-lede">
+        Four capabilities that fit together. Most engagements use two or three of them.
+      </p>
+      <div class="grid">
+        <div class="card">
+          <span class="ico">◆</span>
+          <h3>Software engineering</h3>
+          <p>Backend services, APIs, data models and the frontends on top of them.
+             Go, Python, JavaScript and React, with the database work taken as
+             seriously as the code that queries it.</p>
+        </div>
+        <div class="card">
+          <span class="ico">◆</span>
+          <h3>Product management</h3>
+          <p>Requirements that a developer can build from and a tester can test from.
+             User stories, functional specs, backlog shaping, and the unglamorous
+             coordination that keeps a release moving.</p>
+        </div>
+        <div class="card">
+          <span class="ico">◆</span>
+          <h3>Quality assurance</h3>
+          <p>Test planning and execution against what was actually specified.
+             Reproducible bug reports, regression coverage, and honest reporting
+             of what is and isn't covered.</p>
+        </div>
+        <div class="card">
+          <span class="ico">◆</span>
+          <h3>AI-assisted systems</h3>
+          <p>Document extraction, classification and retrieval built on current
+             language models — with the validation layer that decides what to trust
+             and what to hold for review.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="approach">
+    <div class="wrap">
+      <h2>How we work</h2>
+      <p class="sec-lede">
+        Small team, direct contact, no account managers between you and the people building.
+      </p>
+      <ol class="steps">
+        <li>
+          <strong>We scope before we quote</strong>
+          <span>A short conversation about what you're building and where it's stuck,
+                then a written scope. If the work isn't a fit, we say so.</span>
+        </li>
+        <li>
+          <strong>You get hours, not headcount</strong>
+          <span>Billing is hourly against logged work, invoiced monthly. You see what
+                was done and how long it took.</span>
+        </li>
+        <li>
+          <strong>Work lands in your repository</strong>
+          <span>Your tools, your branch conventions, your review process. Everything
+                we produce is yours, assigned in writing.</span>
+        </li>
+        <li>
+          <strong>Nothing ships unverified</strong>
+          <span>Testing isn't a separate phase we bolt on. Whoever builds it says
+                plainly what has been checked and what hasn't.</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>About the firm</h2>
+      <p class="sec-lede">
+        Forge Consultancy is a proprietorship based in Bahadurgarh, Haryana, registered
+        as a micro enterprise under the Ministry of MSME. We work with clients outside
+        India and invoice in USD.
+      </p>
+      <dl class="facts">
+        <dt>Legal form</dt><dd>Sole proprietorship</dd>
+        <dt>Proprietor</dt><dd>Sri Krishan Sharma</dd>
+        <dt>Udyam registration</dt><dd>UDYAM-HR-07-0041747</dd>
+        <dt>Classification</dt><dd>Micro enterprise · Services</dd>
+        <dt>Activity</dt><dd>NIC 62020 — computer consultancy and facilities management</dd>
+        <dt>Established</dt><dd>2026</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>Get in touch</h2>
+      <p class="sec-lede">
+        Tell us what you're building and where you need help. We reply to everything.
+      </p>
+      <div class="contact-grid">
+        <div>
+          <div class="label">Email</div>
+          <div class="val"><a href="mailto:forgeconsultancy.in@gmail.com">forgeconsultancy.in@gmail.com</a></div>
+        </div>
+        <div>
+          <div class="label">Phone</div>
+          <div class="val"><a href="tel:+919416732289">+91 94167 32289</a></div>
+        </div>
+        <div>
+          <div class="label">Office</div>
+          <div class="val">560/2, New Patel Park<br>Barahi Road, Line Par<br>Bahadurgarh, Jhajjar<br>Haryana 124507, India</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <span>© 2026 Forge Consultancy</span>
+  <span>Udyam UDYAM-HR-07-0041747 · Bahadurgarh, Haryana, India</span>
+</footer>
+
+</body>
+</html>
