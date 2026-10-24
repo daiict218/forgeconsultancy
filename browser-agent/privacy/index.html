@@ -31,9 +31,9 @@
   <nav><a class="home" href="/browser-agent/">Browser Agent</a><a href="/">Forge Consultancy</a></nav>
 
   <h1>Privacy policy</h1>
-  <p>Browser Agent (Chrome extension) · Effective 24 October 2026 · Publisher: Forge Consultancy, India</p>
+  <p>Browser Agent (Chrome extension) · Effective 24 October 2026 (updated for memory and history) · Publisher: Forge Consultancy, India</p>
 
-  <div class="box"><strong>In short:</strong> Forge Consultancy does not collect, receive or store any of your data. Browser Agent has no server. Your keys and settings stay encrypted in your browser. The text you type and the page content the agent reads are sent only to the AI provider you choose, and only when you use the agent.</div>
+  <div class="box"><strong>In short:</strong> Forge Consultancy does not collect, receive or store any of your data. Browser Agent has no server. Your keys, conversation history and memory stay encrypted on your own device. The text you type and the page content the agent reads are sent only to the AI provider you choose, and only when you use the agent.</div>
 
   <h2>1. What stays in your browser</h2>
   <table>
@@ -41,11 +41,13 @@
     <tr><td>AI provider keys (API keys or the key issued by OpenRouter sign-in)</td><td>Chrome extension storage on your device</td><td>Encrypted with AES-GCM using a key derived from your passphrase (PBKDF2, 600,000 rounds). Decrypted only in the open panel's memory.</td></tr>
     <tr><td>Your passphrase</td><td>Not stored</td><td>Only an encrypted check value is kept, to confirm the passphrase.</td></tr>
     <tr><td>Settings (provider, model, recent models) and skills you add</td><td>Chrome extension storage on your device</td><td>Not sent anywhere.</td></tr>
-    <tr><td>Chat history</td><td>Panel memory only</td><td>Deleted when the panel closes. Never written to disk.</td></tr>
+    <tr><td>Conversation history</td><td>Browser storage on your device (IndexedDB)</td><td>Encrypted with your passphrase key. Kept for 90 days, then deleted automatically.</td></tr>
+    <tr><td>Memory: short facts and preferences the agent learns while you work (for example "use tables"), and summaries of past tasks</td><td>Browser storage on your device (IndexedDB)</td><td>Encrypted with your passphrase key. Passwords, card numbers, codes, keys and ID numbers are refused and never stored.</td></tr>
   </table>
 
   <h2>2. What is sent, and to whom</h2>
   <p>When you ask the agent to do something, Browser Agent sends a request directly from your browser to the AI provider you selected: OpenRouter, Anthropic, OpenAI or Google. The request contains your message, the text and element labels of the page the agent reads to answer you, and the results of the agent's steps. That provider's own privacy policy and terms apply to those requests. If you choose Chrome's on-device model, nothing is sent: the model runs on your device.</p>
+  <p>To answer well, each request also includes the few memories and past-task summaries that match your current message, never your whole history. With Chrome's on-device model, these never leave your device either.</p>
   <p>To list the models your key can use, Browser Agent asks the provider for its model list. When you choose "Sign in with OpenRouter", the sign-in happens on OpenRouter's website, and OpenRouter returns a key for your account to the extension.</p>
   <p>Browser Agent sends nothing to Forge Consultancy and has no analytics, tracking, advertising or telemetry.</p>
 
@@ -65,7 +67,8 @@
 
   <h2>6. Your choices</h2>
   <ul>
-    <li>Delete all keys at any time: Settings, Security, "Delete all keys".</li>
+    <li>Delete all history and memory at any time: Settings, Security, "Forget history and memory".</li>
+    <li>Delete all keys at any time: Settings, Security, "Delete all keys". This also deletes history and memory.</li>
     <li>Limit the sites the extension can access: chrome://extensions, Browser Agent, Details, Site access.</li>
     <li>Remove the extension to delete all of its stored data from your browser.</li>
   </ul>
