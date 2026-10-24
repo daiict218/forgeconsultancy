@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Browser Agent by Forge Consultancy — Your browser. Your model. Your rules.</title>
+<meta name="description" content="Browser Agent is a free Chrome extension: an AI agent in the side panel that reads and works on any web page with the model you choose (Claude, GPT, Gemini, DeepSeek or Chrome's on-device model). No server, no tracking, every action needs your approval.">
+<link rel="canonical" href="https://forgeconsultancy.in/browser-agent/">
+<meta property="og:title" content="Browser Agent — Your browser. Your model. Your rules.">
+<meta property="og:description" content="An AI agent for any web page, on the model you choose. No server, no tracking. Free Chrome extension by Forge Consultancy.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://forgeconsultancy.in/browser-agent/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230c1116'/><path d='M28 72V28h44M28 50h30' stroke='%23e8703a' stroke-width='10' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Browser Agent",
+  "applicationCategory": "BrowserApplication",
+  "operatingSystem": "Chrome",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+  "description": "An AI agent in Chrome's side panel that reads and works on any web page with the model you choose. No server, no tracking, every action needs your approval.",
+  "publisher": {"@type": "Organization", "@id": "https://forgeconsultancy.in/#org", "name": "Forge Consultancy", "url": "https://forgeconsultancy.in/"},
+  "url": "https://forgeconsultancy.in/browser-agent/"
+}
+</script>
+<style>
+  :root { --ink:#0c1116; --panel:#121a22; --line:#202a35; --fg:#e9edf2; --fg-dim:#98a6b5; --ember:#e8703a; --ember-soft:#f0a17c; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--ink); color:var(--fg); font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; line-height:1.6; -webkit-font-smoothing:antialiased; }
+  a { color:var(--ember-soft); }
+  .wrap { max-width:960px; margin:0 auto; padding:0 20px; }
+  nav { display:flex; justify-content:space-between; align-items:center; padding:20px 0; }
+  nav a { color:var(--fg-dim); text-decoration:none; font-size:14px; }
+  nav .home { color:var(--fg); font-weight:700; }
+  .hero { padding:56px 0 40px; }
+  .kicker { color:var(--ember); font-weight:600; font-size:13px; letter-spacing:.08em; text-transform:uppercase; }
+  h1 { font-size:clamp(36px,6vw,58px); line-height:1.04; letter-spacing:-.035em; margin:14px 0 18px; font-weight:800; }
+  h1 span { color:var(--ember); }
+  .lead { font-size:18px; color:var(--fg-dim); max-width:620px; margin:0 0 28px; }
+  .cta { display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+  .btn { display:inline-block; background:var(--ember); color:#160b05; font-weight:700; padding:13px 22px; border-radius:12px; text-decoration:none; }
+  .btn.ghost { background:transparent; color:var(--fg); border:1px solid var(--line); font-weight:600; }
+  .note { color:var(--fg-dim); font-size:13px; }
+  h2 { font-size:26px; letter-spacing:-.02em; margin:0 0 18px; }
+  section { padding:44px 0; border-top:1px solid var(--line); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:20px; }
+  .card b { display:block; font-size:16px; margin-bottom:6px; }
+  .card p { margin:0; color:var(--fg-dim); font-size:14.5px; }
+  ol.steps { padding-left:20px; color:var(--fg-dim); } ol.steps li { margin:8px 0; } ol.steps b { color:var(--fg); }
+  details { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin:10px 0; }
+  summary { cursor:pointer; font-weight:600; }
+  details p { color:var(--fg-dim); margin:10px 0 0; }
+  footer { padding:36px 0 50px; color:var(--fg-dim); font-size:13px; border-top:1px solid var(--line); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><a class="home" href="/">Forge Consultancy</a><a href="/browser-agent/privacy/">Privacy</a></nav>
+
+  <header class="hero">
+    <div class="kicker">Browser Agent · Free Chrome extension</div>
+    <h1>Your browser.<br>Your model.<br><span>Your rules.</span></h1>
+    <p class="lead">An AI agent in Chrome's side panel that reads and works on any web page, using the AI model you choose. No Forge server, no tracking, and nothing happens without your OK.</p>
+    <div class="cta">
+      <!-- STORE_URL: replace href with the Chrome Web Store listing once it is live. -->
+      <a class="btn" id="install" href="#get-started">Add to Chrome</a>
+      <a class="btn ghost" href="/browser-agent/privacy/">How your data is handled</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Why we built it</h2>
+    <div class="grid">
+      <div class="card"><b>Private by design</b><p>Your keys are encrypted on your laptop. Your chats never touch a Forge server, because there is no Forge server.</p></div>
+      <div class="card"><b>Any model, even a local one</b><p>Claude, GPT, Gemini, DeepSeek and 300+ more, or the free model built into Chrome. Switch any time. No lock-in.</p></div>
+      <div class="card"><b>You stay in control</b><p>Every click, every keystroke and every page change waits for your approval. Password and card fields are refused.</p></div>
+    </div>
+  </section>
+
+  <section id="get-started">
+    <h2>Get started in a minute</h2>
+    <ol class="steps">
+      <li><b>Add Browser Agent to Chrome</b> and click its icon to open the side panel.</li>
+      <li><b>Set a passphrase.</b> It locks your keys on this laptop.</li>
+      <li><b>Connect a model:</b> sign in with OpenRouter, paste a Claude, OpenAI or Gemini key, or use Chrome's free on-device model.</li>
+      <li><b>Open any page and ask.</b> "Summarise this", "What needs my attention here?", "Fill this form from my notes."</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Questions</h2>
+    <details><summary>Does Forge see my data?</summary><p>No. Browser Agent has no backend. Your messages and the page text it reads go only to the AI provider you choose. Keys and settings stay encrypted in your browser.</p></details>
+    <details><summary>What does it cost?</summary><p>The extension is free. You pay your AI provider for what you use, or nothing with Chrome's on-device model. The panel shows tokens and cost as your provider reports them.</p></details>
+    <details><summary>Can it act on its own?</summary><p>No. It plans, then asks before each click, each piece of typing and each page change. It will not type passwords, card numbers or one-time codes.</p></details>
+    <details><summary>Can my company set it up for everyone?</summary><p>Yes. Forge Consultancy sets up private AI operations for teams, including company keys and custom skills for your own tools. <a href="mailto:forgeconsultancy.in@gmail.com?subject=Browser%20Agent%20for%20our%20team">Write to us</a>.</p></details>
+  </section>
+
+  <footer>Browser Agent is made by <a href="/">Forge Consultancy</a>, Bahadurgarh, Haryana, India · <a href="mailto:forgeconsultancy.in@gmail.com">forgeconsultancy.in@gmail.com</a> · <a href="/browser-agent/privacy/">Privacy policy</a></footer>
+</div>
+</body>
+</html>

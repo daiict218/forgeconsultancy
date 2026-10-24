@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Browser Agent privacy policy — Forge Consultancy</title>
+<meta name="description" content="How the Browser Agent Chrome extension handles your data: no Forge server, encrypted keys stored only in your browser, and page content sent only to the AI provider you choose.">
+<link rel="canonical" href="https://forgeconsultancy.in/browser-agent/privacy/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230c1116'/><path d='M28 72V28h44M28 50h30' stroke='%23e8703a' stroke-width='10' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+  :root { --ink:#0c1116; --panel:#121a22; --line:#202a35; --fg:#e9edf2; --fg-dim:#98a6b5; --ember:#e8703a; --ember-soft:#f0a17c; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--ink); color:var(--fg); font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; line-height:1.65; -webkit-font-smoothing:antialiased; }
+  a { color:var(--ember-soft); }
+  .wrap { max-width:780px; margin:0 auto; padding:0 20px 60px; }
+  nav { display:flex; justify-content:space-between; padding:20px 0; }
+  nav a { color:var(--fg-dim); text-decoration:none; font-size:14px; } nav .home { color:var(--fg); font-weight:700; }
+  h1 { font-size:34px; letter-spacing:-.03em; margin:30px 0 6px; }
+  h2 { font-size:19px; margin:34px 0 10px; letter-spacing:-.01em; }
+  p, li { color:var(--fg-dim); } strong { color:var(--fg); }
+  table { width:100%; border-collapse:collapse; margin:10px 0; font-size:14.5px; }
+  th, td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top; color:var(--fg-dim); }
+  th { color:var(--fg); font-weight:600; }
+  .box { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:16px 18px; margin:16px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><a class="home" href="/browser-agent/">Browser Agent</a><a href="/">Forge Consultancy</a></nav>
+
+  <h1>Privacy policy</h1>
+  <p>Browser Agent (Chrome extension) · Effective 24 October 2026 · Publisher: Forge Consultancy, India</p>
+
+  <div class="box"><strong>In short:</strong> Forge Consultancy does not collect, receive or store any of your data. Browser Agent has no server. Your keys and settings stay encrypted in your browser. The text you type and the page content the agent reads are sent only to the AI provider you choose, and only when you use the agent.</div>
+
+  <h2>1. What stays in your browser</h2>
+  <table>
+    <tr><th>Data</th><th>Where it is kept</th><th>Protection</th></tr>
+    <tr><td>AI provider keys (API keys or the key issued by OpenRouter sign-in)</td><td>Chrome extension storage on your device</td><td>Encrypted with AES-GCM using a key derived from your passphrase (PBKDF2, 600,000 rounds). Decrypted only in the open panel's memory.</td></tr>
+    <tr><td>Your passphrase</td><td>Not stored</td><td>Only an encrypted check value is kept, to confirm the passphrase.</td></tr>
+    <tr><td>Settings (provider, model, recent models) and skills you add</td><td>Chrome extension storage on your device</td><td>Not sent anywhere.</td></tr>
+    <tr><td>Chat history</td><td>Panel memory only</td><td>Deleted when the panel closes. Never written to disk.</td></tr>
+  </table>
+
+  <h2>2. What is sent, and to whom</h2>
+  <p>When you ask the agent to do something, Browser Agent sends a request directly from your browser to the AI provider you selected: OpenRouter, Anthropic, OpenAI or Google. The request contains your message, the text and element labels of the page the agent reads to answer you, and the results of the agent's steps. That provider's own privacy policy and terms apply to those requests. If you choose Chrome's on-device model, nothing is sent: the model runs on your device.</p>
+  <p>To list the models your key can use, Browser Agent asks the provider for its model list. When you choose "Sign in with OpenRouter", the sign-in happens on OpenRouter's website, and OpenRouter returns a key for your account to the extension.</p>
+  <p>Browser Agent sends nothing to Forge Consultancy and has no analytics, tracking, advertising or telemetry.</p>
+
+  <h2>3. How page content is used</h2>
+  <p>The agent reads a page only when you ask it to work on that page. It uses the content only to carry out your request. It refuses to type into password, card number, card security code and one-time code fields. Every click, every piece of typing and every page change needs your approval in the panel.</p>
+
+  <h2>4. Chrome Web Store User Data Policy</h2>
+  <p>The use of information received by Browser Agent adheres to the <a href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq">Chrome Web Store User Data Policy</a>, including the Limited Use requirements. We do not sell user data, do not use or transfer it for purposes unrelated to the extension's single purpose, and do not use or transfer it to determine creditworthiness or for lending.</p>
+
+  <h2>5. Permissions and why they are needed</h2>
+  <ul>
+    <li><strong>Side panel:</strong> to show the agent next to the page.</li>
+    <li><strong>Storage:</strong> to keep your encrypted keys, settings and skills on your device.</li>
+    <li><strong>Scripting, active tab and site access:</strong> to read the page you ask about and to click or type on it after your approval.</li>
+    <li><strong>Identity:</strong> only for "Sign in with OpenRouter", through Chrome's own sign-in window.</li>
+  </ul>
+
+  <h2>6. Your choices</h2>
+  <ul>
+    <li>Delete all keys at any time: Settings, Security, "Delete all keys".</li>
+    <li>Limit the sites the extension can access: chrome://extensions, Browser Agent, Details, Site access.</li>
+    <li>Remove the extension to delete all of its stored data from your browser.</li>
+  </ul>
+
+  <h2>7. Children</h2>
+  <p>Browser Agent is not directed at children under 13 and does not knowingly process their data.</p>
+
+  <h2>8. Changes</h2>
+  <p>If this policy changes, we will update this page and its effective date. Material changes will also be noted in the extension's release notes.</p>
+
+  <h2>9. Contact</h2>
+  <p>Forge Consultancy, 560/2, New Patel Park, Barahi Road, Line Par, Bahadurgarh, Haryana 124507, India · <a href="mailto:forgeconsultancy.in@gmail.com">forgeconsultancy.in@gmail.com</a> · +91 94167 32289</p>
+</div>
+</body>
+</html>
